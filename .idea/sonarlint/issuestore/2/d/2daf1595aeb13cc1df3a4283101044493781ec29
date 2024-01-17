@@ -1,7 +1,9 @@
 
-9
-java:S1116	"Remove this empty statement.(¼öÎŸ8¥ÙÃÈÑ1
-H
-java:S1068"&Remove this unused "id" private field.(şÓî«şÿÿÿÿ8¦ÙÃÈÑ1
-M
-java:S1068"+Remove this unused "balance" private field.(÷ÊÇ®şÿÿÿÿ8¦ÙÃÈÑ1
+„
+java:S1104"bMake DEPOSIT_FEE_PERCENTAGE a static final constant or non-public and provide accessors if needed.(İš—ˆúÿÿÿÿ8Ã·÷ÈÑ1
+^
+java:S1444"<Make this "public static DEPOSIT_FEE_PERCENTAGE" field final(İš—ˆúÿÿÿÿ8Ã·÷ÈÑ1
+ƒ
+java:S3008"aRename this field "DEPOSIT_FEE_PERCENTAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İš—ˆúÿÿÿÿ8È·÷ÈÑ1
+O
+java:S1172+"-Remove this unused method parameter "amount".(Ìë·€ıÿÿÿÿ8Í·÷ÈÑ1
