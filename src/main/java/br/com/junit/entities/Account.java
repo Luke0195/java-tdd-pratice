@@ -43,9 +43,9 @@ public class Account {
     }
 
     public double fullWithdraw(double amount){
-        double x = amount;
+
         this.balance = 0.0;
-        return balance;
+        return amount;
     }
 
     public void validateFields(Long id, Double balance) throws IllegalArgumentException{

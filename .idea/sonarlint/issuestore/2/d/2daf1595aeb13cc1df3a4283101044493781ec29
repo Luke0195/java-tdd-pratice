@@ -5,7 +5,3 @@ java:S1104"bMake DEPOSIT_FEE_PERCENTAGE a static final constant or non-public 
 java:S1444"<Make this "public static DEPOSIT_FEE_PERCENTAGE" field final(Ýš—ˆúÿÿÿÿ8à¸ˆÊÑ1
 ƒ
 java:S3008"aRename this field "DEPOSIT_FEE_PERCENTAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ýš—ˆúÿÿÿÿ8å¸ˆÊÑ1
-R
-java:S1854."5Remove this useless assignment to local variable "x".(‰î—†8Æ¡‡ÌÑ1
-C
-java:S1481."&Remove this unused "x" local variable.(‰î—†8È¡‡ÌÑ1

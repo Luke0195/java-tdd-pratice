@@ -40,7 +40,8 @@ class AccountTests {
         double initialBalance = 800.00;
         Account account = AccountFactory.makeAccountWithAmount(initialBalance);
         double result = account.fullWithdraw(800.00);
-        Assertions.assertEquals(expectedValue, result);
+        Assertions.assertEquals(expectedValue, account.getBalance());
+        Assertions.assertEquals(result, initialBalance);
     }
 
 
