@@ -52,5 +52,13 @@ class AccountTests {
         Assertions.assertEquals(expectedValue, account.getBalance());
     }
 
+    @Test
+    void withdrawShouldThrowAnErrorIfAmountIsBiggerThatBalance(){
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            Account account = AccountFactory.makeAccountWithAmount(0.0);
+            account.withdraw(900.00);
+        });
+
+    }
 
 }
