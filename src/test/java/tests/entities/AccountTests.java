@@ -9,8 +9,11 @@ import org.junit.jupiter.api.Test;
 // Act - execute as ações necessárias
 // Assert - declare o que deveria acontecer (resultado esperado).
 
-class AccountTests {
+// Unitário testa um funcionalidade isolada.
+// Integração - Testa a comunicação entre os componentes.
+// Funcional - Determinada funcionalidade.
 
+class AccountTests {
 
     @Test
     void depositShouldIncreaseBalanceWhenAValidAmountIsProvided(){
@@ -21,4 +24,17 @@ class AccountTests {
         account.deposit(amount);
         Assertions.assertEquals(expectedValue, account.getBalance());
     }
+
+    @Test
+    void depositShouldDoNothingIfAmountEqualsToZero(){
+        Long id = 1L;
+        double amount = 200.00;
+        double expectedValue = 200.00;
+        Account account = new Account(id, amount);
+        account.deposit(0.0);
+        Assertions.assertEquals(expectedValue, account.getBalance());
+
+    }
+
+
 }

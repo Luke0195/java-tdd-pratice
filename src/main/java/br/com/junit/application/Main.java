@@ -9,5 +9,8 @@ public class Main {
         System.out.println(account.getBalance());
         account.withdraw(8.00);
         System.out.println(account.getBalance());
+        Double value = 3.9;
+        System.out.println(value instanceof  Object);
     }
+
 }

@@ -1,6 +1,8 @@
 package br.com.junit.entities;
 
 
+import java.util.Objects;
+
 public class Account {
 
     public static double DEPOSIT_FEE_PERCENTAGE = 0.02;
@@ -44,8 +46,13 @@ public class Account {
         double x = balance;
         this.balance = 0.0;
         return x;
-
     }
 
+    public void validateFields(Long id, Double balance) throws IllegalArgumentException{
+        Object[] requiredFields = new Object[] { id, balance };
+        for(Object field: requiredFields){
+            if(Objects.isNull(field)) throw new IllegalArgumentException();
+        }
+    }
 
 }
