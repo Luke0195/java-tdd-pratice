@@ -7,3 +7,5 @@
 0src/main/java/br/com/junit/entities/Account.java,2/d/2daf1595aeb13cc1df3a4283101044493781ec29
 ^
 .src/test/java/tests/entities/AccountTests.java,4/d/4dd4f150e3dacaefc4f99469252590d0a1310b7f
+a
+1src/test/java/tests/factories/AccountFactory.java,f/4/f4eac921ee01baab541efb087cccd67e6c5ce21d
