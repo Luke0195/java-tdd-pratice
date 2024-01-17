@@ -26,14 +26,13 @@ class AccountTests {
     }
 
     @Test
-    void depositShouldDoNothingIfAmountEqualsToZero(){
+    void depositShouldDoNothingIfAmountEqualsToZeroOrNegativeAmount(){
         Long id = 1L;
         double amount = 200.00;
         double expectedValue = 200.00;
         Account account = new Account(id, amount);
         account.deposit(0.0);
         Assertions.assertEquals(expectedValue, account.getBalance());
-
     }
 
 
