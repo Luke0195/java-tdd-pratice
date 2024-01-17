@@ -10,7 +10,7 @@ public final  class AccountFactory {
         return new Account(1L, 0.0);
     };
 
-    public static Account makeAccountParams(Long id, Double amount){
-        return new Account(id, amount);
+    public static Account makeAccountWithAmount(Double amount){
+        return new Account(1L, amount);
     }
 }

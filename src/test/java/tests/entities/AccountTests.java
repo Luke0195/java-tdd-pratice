@@ -28,11 +28,20 @@ class AccountTests {
         Long id = 1L;
         double amount = 200.00;
         double expectedValue = 200.00;
-        Account account = AccountFactory.makeAccountParams(id, amount);
+        Account account = AccountFactory.makeAccountWithAmount(amount);
         account.deposit(0.0);
         Assertions.assertEquals(expectedValue, account.getBalance());
     }
 
+
+    @Test
+    void fullWithdrawShouldClearBalance(){
+        double expectedValue = 0.0;
+        double initialBalance = 800.00;
+        Account account = AccountFactory.makeAccountWithAmount(initialBalance);
+        double result = account.fullWithdraw(800.00);
+        Assertions.assertEquals(expectedValue, result);
+    }
 
 
 }
