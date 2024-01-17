@@ -44,5 +44,13 @@ class AccountTests {
         Assertions.assertEquals(result, initialBalance);
     }
 
+    @Test
+    void withdrawShouldDecreaseBalanceIfBalanceIsBiggerThatAmount(){
+        double expectedValue = 600.00;
+        Account account = AccountFactory.makeAccountWithAmount(800.00);
+        account.withdraw(200.00);
+        Assertions.assertEquals(expectedValue, account.getBalance());
+    }
+
 
 }
